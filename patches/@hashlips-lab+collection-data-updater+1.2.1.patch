@@ -1,0 +1,13 @@
+diff --git a/node_modules/@hashlips-lab/collection-data-updater/dist/lib/DataUpdaters/S3BasicNftMetadataDataUpdater.js b/node_modules/@hashlips-lab/collection-data-updater/dist/lib/DataUpdaters/S3BasicNftMetadataDataUpdater.js
+index b4e6519..941a2e9 100644
+--- a/node_modules/@hashlips-lab/collection-data-updater/dist/lib/DataUpdaters/S3BasicNftMetadataDataUpdater.js
++++ b/node_modules/@hashlips-lab/collection-data-updater/dist/lib/DataUpdaters/S3BasicNftMetadataDataUpdater.js
+@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
+ const S3BasicFileDataUpdater_1 = require("./S3BasicFileDataUpdater");
+ class S3BasicNftMetadataDataUpdater extends S3BasicFileDataUpdater_1.default {
+     metadataUpdater;
+-    constructor(resourceName, s3Config, sourcePath, destinationPath, metadataUpdater, fileExtension = ".json") {
++    constructor(resourceName, s3Config, sourcePath, destinationPath, metadataUpdater, fileExtension = "") {
+         super(resourceName, s3Config, sourcePath, destinationPath, fileExtension);
+         this.metadataUpdater = metadataUpdater;
+     }
